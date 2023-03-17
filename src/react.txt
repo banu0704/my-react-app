@@ -1,0 +1,17 @@
+- terminal - npx create-react-app . -- this will creates react app 
+- npm start -- starts the react server 
+
+- npm i react-router-dom -- installed this to define routes in app.js 
+- created files in src -- home, about, products, singleproduct, contact, cart, errorpage -- and passed this routes from app.js
+- npm i styled-components 
+
+- created a file GlobalStyle.js - this styles are applied to whole project (these are common css)
+- in app.js import GlobalStyle then place <GlobalStyle /> above routes so that it can access all the routes 
+- in app.js import ThemeProvider from styled-components and place this<ThemeProvider>
+ </ThemeProvider> above and below the router so that it can access all the routes and GlobalStyle 
+
+- define const theme = {colors: {}, media:{}} in app.js (u can provide any css) also pass theme = {theme} in ThemeProvider -- we can access these themes anywhere in the react-app - ex: ${({theme})=>theme.colors.bg} -- it means in the theme inside colors take the property of bg 
+
+- header.js --> E-Commerce logo and its css 
+- nav.js --> nav-links - home, about, products, contact, cart --- and its css 
+- nav.js --> const [menuIcon, setMenuIcon] = useState() --- defined an onCick button in all nav items
