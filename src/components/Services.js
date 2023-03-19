@@ -43,7 +43,7 @@ const Services = () => {
   )
 }
 const Wrapper = styled.section`
-    padding: 10rem;
+    padding: 5rem 10rem;
     .grid{
         gap: 4.8rem
     }

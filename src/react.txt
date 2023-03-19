@@ -13,5 +13,20 @@
 - define const theme = {colors: {}, media:{}} in app.js (u can provide any css) also pass theme = {theme} in ThemeProvider -- we can access these themes anywhere in the react-app - ex: ${({theme})=>theme.colors.bg} -- it means in the theme inside colors take the property of bg 
 
 - header.js --> E-Commerce logo and its css 
+    - to see header in all pages place <header /> above routes and below router in app.js 
 - nav.js --> nav-links - home, about, products, contact, cart --- and its css 
 - nav.js --> const [menuIcon, setMenuIcon] = useState() --- defined an onCick button in all nav items
+
+- herosection.js, services.js, trusted.js 
+- contact page - embeded iframe of googlemap and form action link from fromspree
+
+- footer.js -- to see footer in all pages place <footer /> below routes and above router in app.js 
+  
+- ErrorPage.js - 404 page created a button to go back to home page 
+
+- created a folder context - productContext.js - useContext() - passed App.js as {children} so in index.js passed App  in <AppContextProvider> 
+                    <App /> 
+               </AppContextProvider>
+    - in productContext.js given value="productContext" and used this in About.js as {consumer} (we can give any name) 
+
+

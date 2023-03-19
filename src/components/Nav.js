@@ -16,7 +16,7 @@ const Nav = () => {
                 &:link, &:visited{
                     display: inline-block;
                     text-decoration: none;
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     font-weight: 400;
                     text-transform: uppercase;
                     color: ${({theme}) => theme.colors.black}
@@ -44,19 +44,19 @@ const Nav = () => {
             
                 .cart-trolley{
                     postion: relatve;
-                    font-size: 3rem;
+                    font-size: 2rem;
                 }
                 .cart-total-item{
-                    width: 2rem;
-                    height: 2rem;
+                    width: 1.4rem;
+                    height: 1.4rem;
                     position: absolute;
                     background-color: #000;
                     color: #000;
                     border-radius: 50%;
                     display: grid;
                     place-items: center;
-                    top: 10%;
-                    left: 94%;
+                    top: 18%;
+                    left: 94.5%;
                     background-color: ${({theme}) => theme.colors.helper}
                 }
         }
@@ -126,12 +126,13 @@ const Nav = () => {
 
                 .cart-trolley{
                     position: relative;
-                    font-size: 5.2 rem;
+                    font-size: 4rem;
                 }
                 .cart-total-item{
-                    width: 2.2;
-                    height: 2.2;
+                    width: 2.5rem;
+                    height: 2.5rem;
                     font-size: 2rem;
+                    top: -20%;
                 }
             }
             .user-logout,.user-login{
@@ -139,9 +140,9 @@ const Nav = () => {
                 padding: 0.8rem 1.4rem;
             }
         }
-    `;  
-  return (
-    <Nav>
+    `;
+    return (
+        <Nav>
         <div className={menuIcon ? 'navbar active' : 'navbar'}>
             <ul className='navbar-lists'>
                 <li>
@@ -178,8 +179,7 @@ const Nav = () => {
                 />
             </div>
         </div>
-    </Nav>
-  )
+        </Nav>
+    )
 }
-
 export default Nav;

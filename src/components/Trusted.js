@@ -31,6 +31,7 @@ const Trusted = () => {
   )
 }
 const Wrapper = styled.section`
+    
     .container{
         padding: 7rem;
     }

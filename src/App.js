@@ -13,6 +13,7 @@ import Cart from "./Cart";
 import ErrorPage from "./ErrorPage";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = ()=>{
   const theme = {
@@ -54,6 +55,8 @@ const App = ()=>{
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
+      {/* place footer below routes so that it always appears at bottom */}
     </Router>
     </ThemeProvider>
   )

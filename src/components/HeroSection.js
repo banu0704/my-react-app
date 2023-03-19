@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { Button } from "./styles/Button";
+import { Button } from '../styles/Button';
 
 const HeroSection = ({myData}) => {
     const {name} = myData
@@ -22,7 +22,7 @@ const HeroSection = ({myData}) => {
                 {/* hero-section-image */}
                 <div className="hero-section-image">
                     <figure>
-                        <img src="./images/hero.webp" className="img-style" alt="hero-section-image"/>
+                        <img src="./images/hero.webp" className="img-style" alt="hero-section-img"/>
                     </figure>
                 </div>
             </div>
@@ -32,7 +32,7 @@ const HeroSection = ({myData}) => {
 }
 
 const Wrapper = styled.section`
-    padding: 10rem;
+    padding: 10rem 10rem 5rem 10rem;
     img{
         min-width: 10rem;
         height: 10rem;

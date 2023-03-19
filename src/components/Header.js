@@ -16,7 +16,7 @@ const Header = () => {
 }
 const MainHeader = styled.header`
     padding: 0 4.8rem;
-    height: 7rem;
+    height: 6rem;
     background-color: ${({theme}) => theme.colors.bg};
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ const MainHeader = styled.header`
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
         .logo-img{
-         height: 7rem
+         height: 6rem
         }
     }
     // .logo{
